@@ -1,0 +1,43 @@
+body
+{
+	background-color: #88b2d2;
+	font:100% Geneva,Tahoma,Verdana,sans-self;
+}
+
+.architect,.aside,.footer
+{
+	background-color: #fff;
+	padding: 1.5em 1.75em;
+}
+.intro
+{
+	background-color: #686a63;
+	color: #fff;
+	line-height: 1.5;
+	padding: 1em;
+}
+
+h2
+{
+	background-color: #eaebef;
+	color: #7d717c;
+	font-size: 1.75em;
+}
+
+a:link
+{
+	color: #fdb09d;
+	font-weight: bold;
+
+}
+
+a:visited
+{
+	color:#b44f4f;
+}
+
+a:hover
+{
+	color: #f00;
+}
+
