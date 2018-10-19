@@ -22,12 +22,26 @@ h2
 	background-color: #eaebef;
 	color: #7d717c;
 	font-size: 1.75em;
+	text-align: center;
+	font-variant: small-caps;
+}
+h1{
+	text-align: center;
+	text-transform: uppercase;
+}
+
+p{
+	text-indent: 2em;
+	text-align: justify;
+
 }
 
 a:link
 {
 	color: #fdb09d;
 	font-weight: bold;
+	text-decoration: none;
+	font-style: italic;
 
 }
 
@@ -39,5 +53,6 @@ a:visited
 a:hover
 {
 	color: #f00;
+	text-decoration: underline;
 }
 
