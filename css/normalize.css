@@ -75,12 +75,47 @@ img {
   font-weight: normal;
   font-style: normal;
 }
+/*FONTS PTSans*/
+@font-face {
+    font-family: 'PTSans';
+    src: url('font/PTS55F-webfont.eot');
+    src: url('font/PTS55F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/PTS55F-webfont.woff2') format('woff2'),
+         url('font/PTS55F-webfont.woff') format('woff'),
+         url('font/PTS55F-webfont.ttf') format('truetype'),
+    font-weight: normal;
+    font-style: normal;
 
+}
+
+@font-face {
+    font-family: 'PTSans';
+    src: url('font/PTS56F-webfont.eot');
+    src: url('font/PTS56F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/PTS56F-webfont.woff2') format('woff2'),
+         url('font/PTS56F-webfont.woff') format('woff'),
+         url('font/PTS56F-webfont.ttf') format('truetype'),
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'PTSans';
+    src: url('font/PTS75F-webfont.eot');
+    src: url('font/PTS75F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/PTS75F-webfont.woff2') format('woff2'),
+         url('font/PTS75F-webfont.woff') format('woff'),
+         url('font/PTS75F-webfont.ttf') format('truetype'),
+    font-weight: bold;
+    font-style: normal;
+
+}
 
 /* GENERAL (APPLIED DIRECTLY TO ELEMENTS MOSTLY)
 ------------------------------------------------ */
 body {
-  font: 100%/1.2 Georgia, "Times New Roman", serif;
+  font: 100%/1.2 'PTSans',Georgia, "Times New Roman", serif;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -99,6 +134,12 @@ h1 {
   letter-spacing: -2px;
   line-height: .975;
   margin-bottom: .4125em;
+}
+
+.about
+{
+  font-family: 'Charmonman', cursive;
+  font-weight: 300;
 }
 
 .about h2,
