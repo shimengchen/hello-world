@@ -1,0 +1,56 @@
+body{
+	font:100%/1.2 sans-serif;
+	padding: 5px 0 0 20px;
+}
+
+a {
+    color: #1162a4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.documents{
+	list-style: none;
+	margin-left: 0;
+	margin-top: 0;
+	padding-left: 0;
+}
+
+.documents li{
+	margin-top: 0.45em;
+}
+
+.icon{
+	line-height: 1.1;
+	font-size: 0.875em;
+	min-height: 16px;
+	padding-left: 23px;
+	padding-top: 2px;
+	position: relative;
+}
+
+.icon:before{
+	background-image: url(../img/sprite.png);
+	content: " ";
+	display: block;
+	height: 16px;
+	left: 0;
+	position: absolute;
+	width: 16px;
+	top: 0;
+}
+
+a[href$=".xls"]:before
+{
+	background-position: -17px 0;
+}
+
+a[href$=".docx"]:before
+{
+	background-position: -34px 0;
+}
+
+
