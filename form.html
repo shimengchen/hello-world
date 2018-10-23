@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML Learning:form</title>
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+</head>
+<body>
+	<main class="wrapper" role="main">
+		<h1>Create a New Account</h1>
+
+		<form method="post" action="show-data.php" enctype="multipart/form-data">
+			<!--START ACCOUNT FIELDS-->
+			<fieldset>
+				<h2 class="hdr-account">Account</h2>
+				<div class="fields">
+					<p class="row">
+						<label for="first-name">First Name:</label>
+						<input type="text" name="first-name" id="first-name"
+						class="field-large" required="required" aria-required="true"/>
+					</p>
+
+					<p class="row">
+						<label for="last-name">Last Name:</label>
+						<input type="text" name="last-name" id="last-name" class="field-large"/>
+					</p>
+
+					<div class="row">
+						<fieldset class="radios">
+							<legend>Gender:</legend>
+							<p class="row">
+								<input type="radio" id="gender-male" name="gender" value="male" checked="checked" />
+								<label for="gender-male">Male</label>
+							</p>
+							<p class="row">
+								<input type="radio" id="gender-female" name="gender" value="female"/>
+								<label for="gender-female">Female</label>
+							</p>
+						</fieldset>
+					</div>
+
+					<div class="row">
+						<label for="picture">Picture:</label>
+						<input type="file" name="picture" id="picture"/>
+						<p class="instructions">Maximum size of 700k. JPG, GIF or PNG.</p>
+					</div>
+
+					<div class="row">
+						<label for="state">State:</label>
+						<select id="state" name="state">
+							<option value="AL">Alabama</option>
+							<option value="AK">Alaska</option>
+							<option value="CA">California</option>
+							<option value="CO">Colorado</option>
+						</select>
+					</div>
+
+					<p class="row">
+						<label for="email">Email:</label>
+						<input type="email" name="email" id="email" class="field-large" placeholder="yourname@example.com"/>
+					</p>
+
+					<div class="row">
+						<label for="website">Website URL:</label>
+						<input type="url" name="website" id="website" class="field-large" placeholder="http://www.example.com" />
+						<p class="instructions">Have a site or a blog?Put the address here,beginning with <kbd>http://</kbd> or <kbd>https://</kbd>.</p>
+					</div>
+
+					<div class="row">
+						<label for="bio">Bio:</label>
+						<textarea id="bio" name="bio" cols="40" rows="5" class="field-large"></textarea>
+					</div>
+
+					<p class="row">
+						<label for="phone">Phone:</label>
+						<input type="tel" name="phone" class="field-large" placeholder="xxx-xxx-xxxx" pattern="\d{3}-\d{3}-\d{4}"/>
+					</p>
+
+					<p class="row">
+						<label for="password">Password:</label>
+						<input type="password" name="password" id="password"/>
+					</p>
+
+					<p class="row">
+						<label for="re-password">Re-enter Password:</label>
+						<input type="password" name="re-password" id="re-password"/>
+					</p>
+				</div>
+			</fieldset>
+			
+			<fieldset>
+				<h2 class="hdr-emails">Emails</h2>
+				<div class="fields checkboxes">
+					<div class="row">
+						<input type="checkbox" id="email-ok-msg-from-users" name="email_signuo[]" value="use-emails"/>
+						<label for="email-ok-msg-from-users">It is okay to email me with messages from other users.</label>
+					</div>
+					<div class="row">
+						<input type="checkbox" id="email-ok-occasional-updates" name="email_signuo[]" value="occasional-updates"/>
+						<label for="email-ok-occasional-updates">It is okay to email me with occasional promotions about our other products.</label>
+					</div>
+
+					<input type="hidden" name="step" value="6"/>
+				</div>
+			</fieldset>
+			<input type="submit" value="Create Account" class="btn" />
+			<button type="submit" class="btn">
+				<img src="img/facebook.png" width="21" height="21" alt="">Create Profile</button>
+
+		</form>
+	</main>
+</body>
+</html>
